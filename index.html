@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head lang="ru">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript">
+        VK.init({ apiId: 52039312, onlyWidgets: true });
+    </script>
+    
     <meta charset="UTF-8">
+    
     <title>Bananosite</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
@@ -109,7 +115,10 @@
     </footer>
 
 </div>
-
+<div id="vk_comments"></div>
+<script type="text/javascript">
+    VK.Widgets.Comments("vk_comments", { limit: 10, attach: "*" });
+</script>
 <script src="js/jquery.1.8.3.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/featherlight.min.js"></script>
